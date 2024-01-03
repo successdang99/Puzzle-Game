@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../fonts/fontawesome-free-5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+</head>
+
+<body>
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"> </h1>
+        <form class="end-form-container">
+            <h2 id="end-text">Save your score</h2>
+            <input type="text" name="name" id="username" placeholder="Enter your name...">
+        </form>
+        <button class="btn" id="saveScoreBtn" type="submit"
+            onclick="saveHighScore(event)" disabled>Saved</button>
+        <a href="game.html" class="btn">Play Again</a>
+        <a href="../index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+    </div>
+    <script src="../js/end.js"></script>
+</body>
+</html>
